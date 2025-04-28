@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Entry Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        select {
+            width: calc(100% - 12px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Entry Form</h1>
+        <form id="dataEntryForm">
+            <div class="form-group">
+                <label for="year">YEAR</label>
+                <input type="text" id="year" name="YEAR" required>
+            </div>
+            <div class="form-group">
+                <label for="month">MONTH</label>
+                <input type="text" id="month" name="MONTH" required>
+            </div>
+            <div class="form-group">
+                <label for="state">STATE</label>
+                <input type="text" id="state" name="STATE" required>
+            </div>
+            <div class="form-group">
+                <label for="distributor">DISTRIBUTOR</label>
+                <input type="text" id="distributor" name="DISTRIBUTOR" required>
+            </div>
+            <div class="form-group">
+                <label for="accountName">ACCOUNT NAME</label>
+                <input type="text" id="accountName" name="ACCOUNT NAME" required>
+            </div>
+
+            <h2>Parameters</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label for="cov19">COVID-19</label>
+                    <input type="text" id="cov19" name="COVID-19">
+                </div>
+                <div class="grid-item">
+                    <label for="infab">INF A/B</label>
+                    <input type="text" id="infab" name="INF A/B">
+                </div>
+                <div class="grid-item">
+                    <label for="h1n1">H1N1</label>
+                    <input type="text" id="h1n1" name="H1N1">
+                </div>
+                <div class="grid-item">
+                    <label for="h3n2h1n1">H3N2/H1N1</label>
+                    <input type="text" id="h3n2h1n1" name="H3N2/H1N1">
+                </div>
+                <div class="grid-item">
+                    <label for="nipah">NIPAH</label>
+                    <input type="text" id="nipah" name="NIPAH">
+                </div>
+                <div class="grid-item">
+                    <label for="truemixcov19">TRUEMIX COVID-19</label>
+                    <input type="text" id="truemixcov19" name="TRUEMIX COVID-19">
+                </div>
+                <div class="grid-item">
+                    <label for="mtb">MTB</label>
+                    <input type="text" id="mtb" name="MTB">
+                </div>
+                <div class="grid-item">
+                    <label for="mtbp">MTB+</label>
+                    <input type="text" id="mtbp" name="MTB+">
+                </div>
+                <div class="grid-item">
+                    <label for="rifdx">RIF DX</label>
+                    <input type="text" id="rifdx" name="RIF DX">
+                </div>
+                <div class="grid-item">
+                    <label for="inh">INH</label>
+                    <input type="text" id="inh" name="INH">
+                </div>
+                <div class="grid-item">
+                    <label for="hev">HEV</label>
+                    <input type="text" id="hev" name="HEV">
+                </div>
+                <div class="grid-item">
+                    <label for="hav">HAV</label>
+                    <input type="text" id="hav" name="HAV">
+                </div>
+                <div class="grid-item">
+                    <label for="hbv">HBV</label>
+                    <input type="text" id="hbv" name="HBV">
+                </div>
+                <div class="grid-item">
+                    <label for="hcv">HCV</label>
+                    <input type="text" id="hcv" name="HCV">
+                </div>
+                <div class="grid-item">
+                    <label for="hiv1">HIV-1</label>
+                    <input type="text" id="hiv1" name="HIV-1">
+                </div>
+                <div class="grid-item">
+                    <label for="hiv12">HIV-1/2</label>
+                    <input type="text" id="hiv12" name="HIV-1/2">
+                </div>
+                <div class="grid-item">
+                    <label for="hlab27">HLA B27</label>
+                    <input type="text" id="hlab27" name="HLA B27">
+                </div>
+                <div class="grid-item">
+                    <label for="denv">DEN V</label>
+                    <input type="text" id="denv" name="DEN V">
+                </div>
+                <div class="grid-item">
+                    <label for="chikv">CHIK V</label>
+                    <input type="text" id="chikv" name="CHIK V">
+                </div>
+                 <div class="grid-item">
+                    <label for="denvchikv">DEN V/CHIK V</label>
+                    <input type="text" id="denvchikv" name="DEN V/CHIK V">
+                </div>
+                <div class="grid-item">
+                    <label for="lts">LTS</label>
+                    <input type="text" id="lts" name="LTS">
+                </div>
+                <div class="grid-item">
+                    <label for="scrubt">SCRUB T</label>
+                    <input type="text" id="scrubt" name="SCRUB T">
+                </div>
+                <div class="grid-item">
+                    <label for="malpf">MAL PF</label>
+                    <input type="text" id="malpf" name="MAL PF">
+                </div>
+                <div class="grid-item">
+                    <label for="malpvpf">MAL PV/PF</label>
+                    <input type="text" id="malpvpf" name="MAL PV/PF">
+                </div>
+                <div class="grid-item">
+                    <label for="hpvhr">HPV-HR</label>
+                    <input type="text" id="hpvhr" name="HPV-HR">
+                </div>
+                <div class="grid-item">
+                    <label for="gbs">GBS</label>
+                    <input type="text" id="gbs" name="GBS">
+                </div>
+                <div class="grid-item">
+                    <label for="ct">CT</label>
+                    <input type="text" id="ct" name="CT">
+                </div>
+                <div class="grid-item">
+                    <label for="ng">NG</label>
+                    <input type="text" id="ng" name="NG">
+                </div>
+                <div class="grid-item">
+                    <label for="ctng">CT/NG</label>
+                    <input type="text" id="ctng" name="CT/NG">
+                </div>
+                <div class="grid-item">
+                    <label for="trich">TRICH</label>
+                    <input type="text" id="trich" name="TRICH">
+                </div>
+                <div class="grid-item">
+                    <label for="hsv12">HSV1/2</label>
+                    <input type="text" id="hsv12" name="HSV1/2">
+                </div>
+                <div class="grid-item">
+                    <label for="cmv">CMV</label>
+                    <input type="text" id="cmv" name="CMV">
+                </div>
+                <div class="grid-item">
+                    <label for="salm">SALM</label>
+                    <input type="text" id="salm" name="SALM">
+                </div>
+                <div class="grid-item">
+                    <label for="cdi">CDI</label>
+                    <input type="text" id="cdi" name="CDI">
+                </div>
+                <div class="grid-item">
+                    <label for="shig">SHIG</label>
+                    <input type="text" id="shig" name="SHIG">
+                </div>
+                <div class="grid-item">
+                    <label for="cholera">CHOLERA</label>
+                    <input type="text" id="cholera" name="CHOLERA">
+                </div>
+                <div class="grid-item">
+                    <label for="rabies">RABIES</label>
+                    <input type="text" id="rabies" name="RABIES">
+                </div>
+                <div class="grid-item">
+                    <label for="ebv">EBV</label>
+                    <input type="text" id="ebv" name="EBV">
+                </div>
+                <div class="grid-item">
+                    <label for="mleprae">M.LEPRAE</label>
+                    <input type="text" id="mleprae" name="M.LEPRAE">
+                </div>
+                <div class="grid-item">
+                    <label for="uci">UC-I</label>
+                    <input type="text" id="uci" name="UC-I">
+                </div>
+                <div class="grid-item">
+                    <label for="ucii">UC-II</label>
+                    <input type="text" id="ucii" name="UC-II">
+                </div>
+                <div class="grid-item">
+                    <label for="uciii">UC-III</label>
+                    <input type="text" id="uciii" name="UC-III">
+                </div>
+                <div class="grid-item">
+                    <label for="uciv">UC-IV</label>
+                    <input type="text" id="uciv" name="UC-IV">
+                </div>
+                <div class="grid-item">
+                    <label for="ucv">UC-V</label>
+                    <input type="text" id="ucv" name="UC-V">
+                </div>
+                <div class="grid-item">
+                    <label for="atm">ATM</label>
+                    <input type="text" id="atm" name="ATM">
+                </div>
+                <div class="grid-item">
+                    <label for="uspt">USPT</label>
+                    <input type="text" id="uspt" name="USPT">
+                </div>
+                <div class="grid-item">
+                    <label for="mspt">MSPT</label>
+                    <input type="text" id="mspt" name="MSPT">
+                </div>
+                <div class="grid-item">
+                    <label for="uspk">USPK</label>
+                    <input type="text" id="uspk" name="USPK">
+                </div>
+                <div class="grid-item">
+                    <label for="stabilys">STABILYS</label>
+                    <input type="text" id="stabilys" name="STABILYS">
+                </div>
+                <div class="grid-item">
+                    <label for="nasooroswabs">NASO-ORO SWABS</label>
+                    <input type="text" id="nasooroswabs" name="NASO-ORO SWABS">
+                </div>
+                <div class="grid-item">
+                    <label for="cervswabs">CERV. SWABS</label>
+                    <input type="text" id="cervswabs" name="CERV. SWABS">
+                </div>
+                <div class="grid-item">
+                    <label for="bilebroth">BILE BROTH</label>
+                    <input type="text" id="bilebroth" name="BILE BROTH">
+                </div>
+            </div>
+
+            <button type="submit">Submit Data</button>
+        </form>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxubzAOj9I0cHdpaMC93wXZ-YxzTT2GZl0T-8wTJzPex0tm3gmK4RfcK1PSTAkB6LDMvQ/exec'; // Replace with your Apps Script Web App URL
+        const form = document.forms['dataEntryForm'];
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+
+            fetch(scriptURL, { method: 'POST', body: JSON.stringify(data) })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success!', data);
+                    alert('Data submitted successfully!');
+                    form.reset();
+                })
+                .catch((error) => {
+                    console.error('Error!', error);
+                    alert('An error occurred while submitting the data.');
+                });
+        });
+    </script>
+</body>
+</html>
